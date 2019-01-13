@@ -1,0 +1,17 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: purple;
+}
+
+.navbar li {
+    display: inline-block;
+    width: 33.3%;
+    color: white;
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
