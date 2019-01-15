@@ -1,27 +1,28 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
 
-class Navbar extends Component {
-    render() {
-        return (
-            <nav className="navbar">
+function Navbar(props) {
+    console.log(props)
+    return (
+        <nav className="navbar">
+            <ul>
+                <li className="brand">
+                    <a href="/">Clicky Game</a>
+                </li>
+                <li className="how-to">
+                    Click an Image to begin!
+                </li>
                 <ul>
-                    <li className="brand">
-                        <a href="/">Clicky Game</a>
-                    </li>
-                    <li className="how-to">
-                        Click an Image to begin!
+                    <li>
+                        <p>Score: {props.count}</p>
                     </li>
                     <li>
-                        <p>
-                            Score: <span className="score" defaultValue="0"/> 
-                            | Top Score: <span className="top-score" defaultValue="0"/>
-                        </p>
+                        <p>| Top Score: {props.topScore}</p>
                     </li>
                 </ul>
-            </nav>
-        );
-    };
+            </ul>
+        </nav>
+    );
 };
 
 export default Navbar;

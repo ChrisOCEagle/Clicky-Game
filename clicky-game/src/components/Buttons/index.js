@@ -1,14 +1,22 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
+import images from "./assets/images.js";
 
-class Buttons extends Component {
-    render() {
-        return (
-            <div className="container">
-
-            </div>
-        );
-    };
+function Buttons(props) {
+    console.log(props)
+    return (
+        <div className="container">
+            {images.map((img, key) => {
+                return (
+                    <img className="btn"
+                            src={img.src}
+                            alt={img.alt}
+                            key={key}
+                            onClick={props.handleIncrement}></img>
+                );
+            })}
+        </div>
+    );
 };
 
 export default Buttons;

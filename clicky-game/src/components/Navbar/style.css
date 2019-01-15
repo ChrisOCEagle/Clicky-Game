@@ -1,7 +1,9 @@
 .navbar {
     position: fixed;
     width: 100%;
-    background: purple;
+    background: #5138a1;
+    top: 0px;
+    left: 0px;
 }
 
 .navbar li {

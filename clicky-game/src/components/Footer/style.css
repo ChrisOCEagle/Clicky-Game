@@ -1,5 +1,9 @@
 .footer {
-    background-color: purple;
-    padding: 50px;
+    background-color:#5138a1;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
     color: white;
+    /* margin-color: #6956af; */
 }
